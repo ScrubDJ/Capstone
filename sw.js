@@ -48,7 +48,10 @@ If offline or if the file exists in the cache, then it will fetch the files from
 */
 self.addEventListener('fetch', function(e){
   e.respondWith(
-    caches.match(e.request).then(function(response){
+    caches.match(e.request,{
+        cacheName: cacheName
+    }).then(function(response){
+        console.log(response);
         console.log("Fetching "+e.request.url);
       return response || fetch (e.request)
     })
