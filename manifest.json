@@ -1,6 +1,6 @@
 {
-  "name": "Dao Jun Portfolio",
-  "short_name": "DJ Portfolio",
+  "name": "Hello from PWA",
+  "short_name": "hello",
   "lang":"en-US",
   "start_url":"/index.html",
   "display":"standalone",
