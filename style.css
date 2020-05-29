@@ -26,7 +26,7 @@ a {
 
 #background-img1 {
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),url(Images/light-sea-dawn-landscape-33545.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),url(images/light-sea-dawn-landscape-33545.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -258,7 +258,7 @@ footer {
 /* Page 2 of portfolio website */
 #background-img2 {
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),url(Images/macbook-pro-beside-black-pen-and-coffee-3803254.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),url(images/macbook-pro-beside-black-pen-and-coffee-3803254.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -334,7 +334,7 @@ footer {
 /* Page 3 */
 #background-img3 {
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),url(Images/light-creative-camera-metal-2004159.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),url(images/light-creative-camera-metal-2004159.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -379,7 +379,7 @@ footer {
 /* Page 4 */
 #background-img4 {
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),url(Images/android-android-phone-cell-phone-cellphone-404280.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),url(images/android-android-phone-cell-phone-cellphone-404280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
