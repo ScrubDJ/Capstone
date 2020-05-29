@@ -8,12 +8,12 @@ let links = document.querySelector(".links");
         links.classList.toggle('fade');
     })
 
-$(".gallery").magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    gallery:{
-        enabled: true
-    }
-})
+// $(".gallery").magnificPopup({
+//     delegate: 'a',
+//     type: 'image',
+//     gallery:{
+//         enabled: true
+//     }
+// })
 
 
