@@ -22,7 +22,7 @@ let filesToCache = [
   'contact.html',
   'projects.html',
   'style.css',
-  'script.js'
+  'script.js',
   'manifest.json'
 ]
 
