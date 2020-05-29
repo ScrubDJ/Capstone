@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#notification {
+    display: none;
+}
+
+#notification.show {
+    display: block;
+}
+
+#background-img1 {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),url(Images/light-sea-dawn-landscape-33545.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+}
+
+nav {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    min-height: 8vh;
+}
+
+.brand {
+    font-size: 20px;
+    font-family: cursive;
+    letter-spacing: 5px;
+}
+
+.brand span {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.nav-links {
+    padding: 1px 0;
+    margin: 0 30px;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+nav ul li a:last-child {
+    margin-right: 0;
+}
+
+.nav-links::before,
+.nav-links::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: crimson;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s ease-out; 
+}
+
+.nav-links::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.nav-links::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.nav-links:hover::before, 
+.nav-links:hover::after {
+    transform: scaleX(1);
+}
+
+#active {
+    color: crimson;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 30px;
+    height: 3px;
+    margin: 6px;
+    background-color: white;
+}
+
+#background-content {
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: flex-start;
+    color: white;
+    font-size: 24px;
+    height: 80vh;
+    align-items: center;
+}
+
+#background-content div {
+    margin-left: 5rem;
+}
+
+.flex-container1 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+  
+.flex-container1 div {
+    flex-basis: 30vw;
+    text-align: center;
+    margin: 2rem 2em;
+}
+
+#intro-pic {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#intro {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#intro h1 {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+#transit {
+    transition: 0.3s ease-out;
+    font-size: 30px;
+}
+
+#transit:hover {
+    color: red;
+    font-size: 32px;
+}
+
+#find-out-btn {
+    display: inline-block;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    width: 30rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+#find-out-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#find-out-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 25%;
+    right: -20rem;
+    transition: 0.5s;
+}
+
+#find-out-btn:hover span {
+  padding-right: 3rem;
+}
+  
+#find-out-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+footer {
+    background: #333;
+    padding: 90px 0;
+}
+
+.footer-container {
+    color: #f1f1f1;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-container div {
+    margin: 0 10px;
+}
+.left-col h1 {
+    font-size: 36px;
+    font-family: cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.right-col h1 {
+    flex-basis: 800px;
+    font-size: 24px;
+}
+
+.right-col a i {
+    margin: 3px 5px;
+}
+
+.right-col a:hover {
+    color: skyblue;
+}
+
+/* Page 2 of portfolio website */
+#background-img2 {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),url(Images/macbook-pro-beside-black-pen-and-coffee-3803254.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 0.75rem;
+}
+
+#about-section {
+    width: 100%;
+    padding: 60px 0;
+    background: #f1f1f1;
+}
+
+.inner-width {
+    width: 100%;
+    max-width: 80vw;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.border {
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 30px auto;
+}
+
+#about-section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 36px;
+}
+
+#intro-pic2 {
+    width: 50%;
+    margin: auto;
+}
+
+#intro-pic2 img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.content {
+    font-size: 24px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.content h1 {
+    padding: 8px;
+}
+
+.list {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.list ul {
+    list-style: none;
+    display: inline;
+}
+
+.list ul li {
+    display: inline-block;
+    margin: 20px 14px;
+}
+
+.skills {
+    font-size: 24px;
+}
+
+/* Page 3 */
+#background-img3 {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),url(Images/light-creative-camera-metal-2004159.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 0.75rem;
+}
+
+.gallery-section {
+    width: 100%;
+    padding: 60px 0;
+    background: #f1f1f1;
+}
+
+.gallery-section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 36px;
+}
+
+.gallery-section .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-section .image {
+    flex: 33.3%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-section .image img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-out;
+}
+
+.gallery-section .image:hover img {
+    transform: scale(1.5);
+}
+
+/* Page 4 */
+#background-img4 {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),url(Images/android-android-phone-cell-phone-cellphone-404280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 0.75rem;
+}
+
+#contact-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 0;
+    background: #f1f1f1;
+}
+
+#contact-section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 36px;
+}
+
+#contact-section p {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    width: 60%;
+    margin: auto;
+}
+
+.list ul li a {
+    color: #333;
+    font-size: 30px;
+    margin-left: 5px;
+    position: relative;
+}
+
+.list ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #333;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 5px;
+    transition: all 500ms ease-out;
+}
+
+.list ul li a:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+   
+   /* Page 1 */
+    body{
+       overflow-x: hidden;
+   }
+   
+    nav ul {
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       height: 100%;
+       background-color: #333;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+       width: 100%;
+       clip-path: circle(100px at 90% -10%);
+       -webkit-clip-path: circle(100px at 90% -25%);
+       transition: all 1s ease-out; 
+       /* transform: translateX(100%);
+       transition: transform 0.5s ease-out; */
+   }
+
+   .burger {
+       display: block;
+       cursor: pointer;
+       z-index: 2;
+   }
+
+   .nav-active {
+        /* transform: translateX(0%); */
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(1200px at 90% -10%);
+   }
+
+   .flex-container1 {
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+
+   .flex-container1 div {
+    flex-basis: 100vw;
+   }
+
+    #intro-pic {
+       width: 80%;
+   }
+    
+    /* Page 3 */
+    .gallery-section .image {
+        flex: 50%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /* Page 1 */
+    #background-content {
+        width: 50%;
+    }
+    
+    #background-content h1 {
+        font-size: 24px;
+    }
+
+    #background-content p {
+        font-size: 24px;
+    }
+    /* Page 3*/
+    .gallery-section .image {
+        flex: 100%;
+    }
+}
+
